@@ -1,0 +1,5 @@
+com\bmicalculatorapp\bmicalculatorapp\BMICalculatorApp.class
+view\BMICalculatorUI.class
+view\BMICalculatorUI$1.class
+controller\BMICalculatorController.class
+model\User.class
