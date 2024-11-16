@@ -3,7 +3,12 @@
  */
 
 package com.bmicalculatorapp.bmicalculatorapp;
-
+import controller.BMICalculatorController;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import view.BMICalculatorUI;
 /**
  *
  * @author sabbir-ahmed
@@ -11,6 +16,10 @@ package com.bmicalculatorapp.bmicalculatorapp;
 public class BMICalculatorApp {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        SwingUtilities.invokeLater(() -> {
+            BMICalculatorController controller = new BMICalculatorController();
+            BMICalculatorUI ui = new BMICalculatorUI(controller);
+            ui.setVisible(true);
+        });
     }
 }

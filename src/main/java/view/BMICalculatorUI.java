@@ -268,16 +268,4 @@ public class BMICalculatorUI extends JFrame {
 
     return panel;
 }
-
-
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            BMICalculatorController controller = new BMICalculatorController();
-            BMICalculatorUI ui = new BMICalculatorUI(controller);
-            ui.setVisible(true);
-        });
-    }
-    
-    
 }
